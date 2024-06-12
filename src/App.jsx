@@ -1,10 +1,14 @@
+//importing components
+import Header from "./components/Header";
 
+//importing icons
+import 'remixicon/fonts/remixicon.css';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+    <Header />
+    </div>
   )
 }
 
