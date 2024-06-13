@@ -3,7 +3,7 @@ import { CiSearch } from 'react-icons/ci'
 
 function SearchBar() {
   return (
-    <div className='search-bar w-[360px] py-0 px-0 fixed right-0 p-[20px] sm:opacity-[100]
+    <div className='search-bar w-[360px] py-0 px-0 left-0 p-[20px] sm:opacity-[100] mx-4
     shadow-[0px_0px_15px_0px_rgba(1,41,112,0.1)] bg-white z-[9999] transition-all hidden opacity-0 sm:block'>
         <form 
         method='POST'
