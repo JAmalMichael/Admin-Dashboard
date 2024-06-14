@@ -7,17 +7,19 @@ import { CiCircleRemove } from 'react-icons/ci'
 
 function NavNotice() {
   return (
-    <li>
-    <a className='nav-link nav-icon' href='#' data-bs-toggle="dropdown">
-    <i><FaRegBell /></i>
-    <span className='badge badge-number'>4</span>
+    <li className='relative top-[250px] bg-white  '>
+    <a className='nav-link nav-icon relative ' href='#' data-bs-toggle="dropdown">
+    <FaRegBell 
+    className='mr-0 text-[20px]'/>
+    <span className='badge badge-number absolute text-[2px] rounded-full
+    text-white'>4</span>
     </a>
 
-    <ul className='dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications'>
-    <li className='dropdown-header'>
+    <ul className='dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications border-2'>
+    <li className='dropdown-header text-sm py-4 px-2'>
     You have 4 new notifications
     <a href='#' >
-    <span className='badge rounded-pill p-2 m-2'>
+    <span className='badge rounded-full text-white p-2 m-1 text-[10px]'>
     View all
     </span>
     </a>
@@ -79,10 +81,10 @@ function NavNotice() {
         </div>
     </li>
 
-                <li>
+                <li className=''>
                 <hr className='dropdown-divider'/>
                 </li>
-                <li className='dropdown-footer'>
+                <li className='dropdown-footer text-sm py-2 px-2'>
                 <a href='#'>Show all notifications</a>
                 </li>
 
