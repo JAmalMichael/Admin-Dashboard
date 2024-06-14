@@ -6,7 +6,7 @@ import NavAvatar from '../sections/NavAvatar'
 function Nav() {
   return (
     <nav className='header-nav'>
-        <ul className="flex items-center">
+        <ul className="flex items-center list-none">
         <NavNotice />
         <NavMessage />
         <NavAvatar />

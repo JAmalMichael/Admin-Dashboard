@@ -1,12 +1,15 @@
 import React from 'react'
 import { FaRegBell } from 'react-icons/fa'
 import { BsExclamationCircle } from 'react-icons/bs'
+import { CiCircleCheck } from 'react-icons/ci'
+import { CiCircleInfo } from 'react-icons/ci'
+import { CiCircleRemove } from 'react-icons/ci'
 
 function NavNotice() {
   return (
     <li>
     <a className='nav-link nav-icon' href='#' data-bs-toggle="dropdown">
-    <FaRegBell />
+    <i><FaRegBell /></i>
     <span className='badge badge-number'>4</span>
     </a>
 
@@ -24,16 +27,64 @@ function NavNotice() {
     </li>
 
         <li className='notification-item'>
-            <BsExclamationCircle className='text-warning'/>
+        <i>
+            <BsExclamationCircle className='text-warning'/> </i>
             <div>
                 <h4>Lorem Ipsum</h4>
                 <p>Quoe dolorem varitas oditsmeno</p>
+                <p>30 minss. ago</p>
             </div>
         </li>
 
+        <li>
+        <hr className='dropdown-divider'/>
+        </li>
+
+        <li className='notification-item'>
+        <i>
+            <CiCircleRemove className='text-failed'/> </i>
+            <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quoe dolorem varitas oditsmeno</p>
+                <p>30 minss. ago</p>
+            </div>
+        </li>
+
+        <li>
+        <hr className='dropdown-divider'/>
+        </li>
+
+        <li className='notification-item'>
+        <i>
+        <CiCircleCheck className='text-success'/> </i>
+        <div>
+            <h4>Lorem Ipsum</h4>
+            <p>Quoe dolorem varitas oditsmeno</p>
+            <p>2 hrs. ago</p>
+        </div>
+    </li>
 
 
+        <li>
+        <hr className='dropdown-divider'/>
+        </li>
 
+        <li className='notification-item'>
+        <i>
+        <CiCircleInfo className='text-primary'/> </i>
+        <div>
+            <h4>Lorem Ipsum</h4>
+            <p>Quoe dolorem varitas oditsmeno</p>
+            <p>4 hrs. ago</p>
+        </div>
+    </li>
+
+                <li>
+                <hr className='dropdown-divider'/>
+                </li>
+                <li className='dropdown-footer'>
+                <a href='#'>Show all notifications</a>
+                </li>
 
 
     </ul>
@@ -41,4 +92,4 @@ function NavNotice() {
   )
 }
 
-export default NavNotice
+export default NavNotice;

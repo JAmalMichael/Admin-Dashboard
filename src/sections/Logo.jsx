@@ -7,13 +7,14 @@ function Logo() {
     }
 
   return (
-    <div className='flex items-center justify-between'>
-        <a href='/' className='flex items-center leading-1 sm:w-[280px] '>
+    <div className='flex items-center w-[250px] justify-between'>
+        <a href='/' className='flex items-center leading-1'>
         <span className='block text-lg text-[26px] font-bold text-[#012970] font-sans'>
         AdminDashboard</span>
         </a>    
           <FaList 
           onClick={handleToggleSideBar}
+          className='toggle'
           />  
     </div>
   )
