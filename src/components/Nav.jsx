@@ -5,11 +5,12 @@ import NavAvatar from '../sections/NavAvatar'
 
 function Nav() {
   return (
-    <nav className='header-nav'>
-        <ul className="flex items-center list-none">
-        <NavNotice className=""/>
-        <NavMessage className=""/>
-        <NavAvatar className=""/>
+    <nav className='header-nav flex'>
+   
+        <ul className=" items-center list-none flex">
+        <NavNotice className="mr-2"/>
+        <NavMessage />
+        <NavAvatar />
         </ul>
     </nav>
   )

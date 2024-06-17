@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaRegBell } from 'react-icons/fa'
 import { BsExclamationCircle } from 'react-icons/bs'
 import { CiCircleCheck } from 'react-icons/ci'
@@ -6,17 +6,26 @@ import { CiCircleInfo } from 'react-icons/ci'
 import { CiCircleRemove } from 'react-icons/ci'
 
 function NavNotice() {
-  return (
-    <li className='relative top-[250px] bg-white  '>
-    <a className='nav-link nav-icon relative ' href='#' data-bs-toggle="dropdown">
-    <FaRegBell 
-    className='mr-0 text-[20px]'/>
-    <span className='badge badge-number absolute text-[2px] rounded-full
-    text-white'>4</span>
-    </a>
+    const [isShow, setIsShow] = useState(false)
 
-    <ul className='dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications border-2'>
-    <li className='dropdown-header text-sm py-4 px-2'>
+
+  return (
+    <li className='relative bg-white  mr-2'>
+    <a href="#"
+     className=''
+     onClick={() => {
+        setIsShow(!isShow);
+     }}
+     >
+      <FaRegBell className='text-[25px] ml-[230px]' />
+      <span 
+      className='z-999 rounded-full bg-blue-600 text-white text-[10px]
+      p-1 absolute right-0 top-[-8px]'>4</span>
+    </a>
+    <ul className={`'dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications border-2 opacity-0'
+        ${isShow === false ? 'hidden' : 'block absolute bg-white transition-all opacity-100'}`}>
+        
+    <li className='dropdown-header text-sm py-1 px-1'>
     You have 4 new notifications
     <a href='#' >
     <span className='badge rounded-full text-white p-2 m-1 text-[10px]'>
@@ -28,10 +37,24 @@ function NavNotice() {
         <hr className='dropdown-divider' />
     </li>
 
-        <li className='notification-item'>
+        <li className='notification-item flex items-center justify-around px-2'>
         <i>
-            <BsExclamationCircle className='text-warning'/> </i>
-            <div>
+            <BsExclamationCircle className='text-warning text-yellow-500 text-xl mr-2'/> </i>
+            <div className='text-sm mx-2 my-2'>
+                <h4>Lorem Ipsum</h4>
+                <p>Quoe dolorem varitas oditsmeno</p>
+                <p>30 mins. ago</p>
+            </div>
+        </li>
+
+        <li>
+        <hr className='dropdown-divider'/>
+        </li>
+
+        <li className='notification-item flex items-center justify-around px-2'>
+        <i>
+            <CiCircleRemove className='text-failed text-red-500 text-xl mr-2'/> </i>
+            <div className='text-sm mx-2 my-2'>
                 <h4>Lorem Ipsum</h4>
                 <p>Quoe dolorem varitas oditsmeno</p>
                 <p>30 minss. ago</p>
@@ -42,24 +65,10 @@ function NavNotice() {
         <hr className='dropdown-divider'/>
         </li>
 
-        <li className='notification-item'>
+        <li className='notification-item flex items-center justify-around px-2'>
         <i>
-            <CiCircleRemove className='text-failed'/> </i>
-            <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quoe dolorem varitas oditsmeno</p>
-                <p>30 minss. ago</p>
-            </div>
-        </li>
-
-        <li>
-        <hr className='dropdown-divider'/>
-        </li>
-
-        <li className='notification-item'>
-        <i>
-        <CiCircleCheck className='text-success'/> </i>
-        <div>
+        <CiCircleCheck className='text-success text-green-500 text-xl mr-2'/> </i>
+        <div className='text-sm mx-2 my-2'>
             <h4>Lorem Ipsum</h4>
             <p>Quoe dolorem varitas oditsmeno</p>
             <p>2 hrs. ago</p>
@@ -71,10 +80,10 @@ function NavNotice() {
         <hr className='dropdown-divider'/>
         </li>
 
-        <li className='notification-item'>
+        <li className='notification-item flex items-center justify-around px-2'>
         <i>
-        <CiCircleInfo className='text-primary'/> </i>
-        <div>
+        <CiCircleInfo className='text-primary text-blue-500 text-xl mr-2'/> </i>
+        <div className='text-sm mx-2 my-2'>
             <h4>Lorem Ipsum</h4>
             <p>Quoe dolorem varitas oditsmeno</p>
             <p>4 hrs. ago</p>
