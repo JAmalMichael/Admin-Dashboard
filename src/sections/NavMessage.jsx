@@ -1,10 +1,6 @@
 import React, { useState } from 'react'
 import { CiChat2 } from 'react-icons/ci' 
-import { FaRegBell } from 'react-icons/fa'
-import { BsExclamationCircle } from 'react-icons/bs'
-import { CiCircleCheck } from 'react-icons/ci'
-import { CiCircleInfo } from 'react-icons/ci'
-import { CiCircleRemove } from 'react-icons/ci'
+
 function NavMessage() {
   const [isShow, setIsShow] = useState(false)
 
@@ -37,63 +33,68 @@ function NavMessage() {
     </li>
 
         <li className='message-item flex items-center justify-around px-2'>
-        <i>
-            <BsExclamationCircle className='text-warning text-yellow-500 text-xl mr-2'/> </i>
+        <a href="#">
+        <img 
+          src="assets/items/messages-1.jpg"
+          alt='message 1'
+          className=''
+        />
             <div className='text-sm mx-2 my-2'>
-                <h4>Victor Mensa</h4>
-                <p>Quoe dolorem varitas oditsmeno</p>
+                <h4>Madalene Mensa</h4>
+                <p>Thanks for a quick turnaround in A/B landing page testing.</p>
                 <p>4 hrs. ago</p>
             </div>
+            </a>
         </li>
 
         <li>
         <hr className='dropdown-divider'/>
         </li>
 
-        <li className='notification-item flex items-center justify-around px-2'>
-        <i>
-            <CiCircleRemove className='text-failed text-red-500 text-xl mr-2'/> </i>
+        <li className='message-item flex items-center justify-around px-2'>
+        <a href="#">
+        <img 
+          src="assets/items/messages-2.jpg"
+          alt='message 2'
+          className=''
+        />
             <div className='text-sm mx-2 my-2'>
-                <h4>Lorem Ipsum</h4>
-                <p>Quoe dolorem varitas oditsmeno</p>
-                <p>30 minss. ago</p>
+                <h4>Jessica Ember</h4>
+                <p>Hi, just a quick reminder that we have our annual meeting by 10:00 am</p>
+                <p>6 hrs. ago</p>
             </div>
+            </a>
         </li>
 
         <li>
         <hr className='dropdown-divider'/>
         </li>
 
-        <li className='notification-item flex items-center justify-around px-2'>
-        <i>
-        <CiCircleCheck className='text-success text-green-500 text-xl mr-2'/> </i>
-        <div className='text-sm mx-2 my-2'>
-            <h4>Lorem Ipsum</h4>
-            <p>Quoe dolorem varitas oditsmeno</p>
-            <p>2 hrs. ago</p>
-        </div>
-    </li>
+        <li className='message-item flex items-center justify-around px-2'>
+        <a href="#">
+        <img 
+          src="assets/items/messages-3.jpg"
+          alt='message 3'
+          className=''
+        />
+            <div className='text-sm mx-2 my-2'>
+                <h4>Sarah Wilcox</h4>
+                <p>I just sent you the updated mockups for the blog post series.</p>
+                <p>7 hrs. ago</p>
+            </div>
+            </a>
+        </li>
 
 
         <li>
         <hr className='dropdown-divider'/>
         </li>
-
-        <li className='notification-item flex items-center justify-around px-2'>
-        <i>
-        <CiCircleInfo className='text-primary text-blue-500 text-xl mr-2'/> </i>
-        <div className='text-sm mx-2 my-2'>
-            <h4>Lorem Ipsum</h4>
-            <p>Quoe dolorem varitas oditsmeno</p>
-            <p>4 hrs. ago</p>
-        </div>
-    </li>
 
                 <li className=''>
                 <hr className='dropdown-divider'/>
                 </li>
                 <li className='dropdown-footer text-sm py-2 px-2'>
-                <a href='#'>Show all notifications</a>
+                <a href='#'>Show all messagess</a>
                 </li>
 
 
