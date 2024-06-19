@@ -14,7 +14,7 @@ function Logo() {
         </a>    
           <FaList 
           onClick={handleToggleSideBar}
-          className='toggle'
+          className='toggle cursor-pointer'
           />  
     </div>
   )

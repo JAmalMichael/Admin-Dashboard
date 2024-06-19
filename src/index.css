@@ -182,3 +182,9 @@ h6 {
 .header-nav .profile .dropdown-item:hover {
   background-color: #f6f9ff;
 }
+
+.toggle-sidebar .sidebar {
+  left: -300px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1)  0.5s; 
+  opacity: 0;
+}
