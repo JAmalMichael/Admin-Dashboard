@@ -9,9 +9,11 @@ import { FaChartBar } from 'react-icons/fa';
 import { GiBoxingGloveSurprise } from 'react-icons/gi';
 
 function SideBar() {
-    const [expandedIndex, setExpandedIndex] = useState(false);
+    const [expandedIndex, setExpandedIndex] = useState(0);
+
+    const dropdowns = ["nav-content1", "nav-content2", "nav-content3", "nav-content4", "nav-content5" ]
     
-   
+  
 
   return (
     <div id='sidebar' className='sidebar'>
@@ -31,7 +33,7 @@ function SideBar() {
               className='nav-link flex items-center justify-between'
               href='#'
               onClick={() => {
-                setExpandedIndex(!expandedIndex);
+                setExpandedIndex((prevExpandedIndex) => (prevExpandedIndex === 0 ? dropdowns[0] : 0));
               }}
             >
             <div className='flex items-center'>
@@ -39,13 +41,13 @@ function SideBar() {
               <span>Documents</span>
               </div>
               <i className=''>
-              <FaChevronDown className={` ${expandedIndex === false ? '' : 'rotate-180' }`} />
+              <FaChevronDown className={` ${expandedIndex === 'nav-content1' ? '' : 'rotate-180' }`} />
               </i>
             </a>
               <ul 
               id='components-nav'
-              className={`nav-content1 ${expandedIndex === false ? 'hidden opacity-0' :
-                 'block opacity-100 transition-all' }`}>
+              className={`nav-content1 ${expandedIndex === 'nav-content1' ? 'block opacity-100 transition-all' :
+                 'hidden opacity-0' }`}>
               
               <li >
                 <a href='#' className='text-[#012970]'>
@@ -74,21 +76,22 @@ function SideBar() {
               className='nav-link nav-link flex items-center justify-between'
               href='#'
               onClick={() => {
-                setExpandedIndex(!expandedIndex);
+                setExpandedIndex((prevExpandedIndex) => (prevExpandedIndex === 0 ? dropdowns[1] : 0));
               }}
             >
             <div className='flex items-center'>
               <i className='journal-text'><FaWpforms /></i>
               <span>Forms</span>
               </div>
-              <i className='chevron-down'><FaChevronDown 
-              className={` ${expandedIndex === false ? '' : 'rotate-180' }`}/></i>
+              <i className='chevron-down'>
+              <FaChevronDown className={` ${expandedIndex === 'nav-content2' ? '' : 'rotate-180' }`} />
+              </i>
             </a>
 
             <ul 
             id='forms-nav'
-            className={`nav-content2 ${expandedIndex === false ? 'hidden opacity-0' :
-              'block opacity-100 transition-all' }`}>
+            className={`nav-content2 ${expandedIndex === 'nav-content2' ? 'block opacity-100 transition-all' :
+              'hidden opacity-0' }`}>
             <li >
               <a href='#' className='text-[#012970]'>
               <i></i>
@@ -117,21 +120,22 @@ function SideBar() {
               className='nav-link nav-link flex items-center justify-between'
               href='#'
               onClick={() => {
-                setExpandedIndex(!expandedIndex);
+                setExpandedIndex((prevExpandedIndex) => (prevExpandedIndex === 0 ? dropdowns[2] : 0));
               }}
             >
             <div className='flex items-center'>
               <i className='journal-text'><FaTable /></i>
               <span>Tables</span>
               </div>
-              <i className='chevron-down'><FaChevronDown 
-              className={` ${expandedIndex === false ? '' : 'rotate-180' }`}/></i>
+              <i className='chevron-down'>
+              <FaChevronDown className={` ${expandedIndex === 'nav-content3' ? '' : 'rotate-180' }`} />
+              </i>
             </a>
 
             <ul 
             id='forms-nav'
-            className={`nav-content3 ${expandedIndex === false ? 'hidden opacity-0' :
-              'block opacity-100 transition-all' }`}>
+            className={`nav-content3 ${expandedIndex === 'nav-content3' ? 'block opacity-100 transition-all' :
+              'hidden opacity-0' }`}>
             <li>
               <a href='#' className='text-[#012970]'>
               <i></i>
@@ -153,21 +157,22 @@ function SideBar() {
               className='nav-link nav-link flex items-center justify-between'
               href='#'
               onClick={() => {
-                setExpandedIndex(!expandedIndex);
+                setExpandedIndex((prevExpandedIndex) => (prevExpandedIndex === 0 ? dropdowns[3] : 0));
               }}
             >
             <div className='flex items-center'>
               <i className='journal-text'> <FaChartBar /> </i>
               <span>Charts</span>
               </div>
-              <i className='chevron-down'><FaChevronDown 
-              className={` ${expandedIndex === false ? '' : 'rotate-180' }`}/></i>
+              <i className='chevron-down'>
+              <FaChevronDown className={` ${expandedIndex === 'nav-content4' ? '' : 'rotate-180' }`} />
+              </i>
             </a>
 
             <ul 
             id='forms-nav'
-            className={`nav-content4 ${expandedIndex === false ? 'hidden opacity-0' :
-              'block opacity-100 transition-all' }`}>
+            className={`nav-content4 ${expandedIndex === 'nav-content4' ? 'block opacity-100 transition-all' :
+              'hidden opacity-0' }`}>
             <li>
               <a href='#' className='text-[#012970]'>
               <i></i>
@@ -195,21 +200,22 @@ function SideBar() {
               className='nav-link nav-link flex items-center justify-between'
               href='#'
               onClick={() => {
-                setExpandedIndex(!expandedIndex);
+                setExpandedIndex((prevExpandedIndex) => (prevExpandedIndex === 0 ? dropdowns[4] : 0));
               }}
             >
             <div className='flex items-center'>
               <i className='journal-text'> <GiBoxingGloveSurprise /> </i>
               <span>Icons</span>
               </div>
-              <i className='chevron-down'><FaChevronDown 
-              className={` ${expandedIndex === false ? '' : 'rotate-180' }`}/></i>
+              <i className='chevron-down'>
+              <FaChevronDown className={` ${expandedIndex === 'nav-content5' ? '' : 'rotate-180' }`} />
+              </i>
             </a>
 
             <ul 
             id='forms-nav'
-            className={`nav-content6 ${expandedIndex === false ? 'hidden opacity-0' :
-              'block opacity-100 transition-all' }`}>
+            className={`nav-content5 ${expandedIndex === 'nav-content5' ? 'block opacity-100 transition-all' :
+              'hidden opacity-0' }`}>
             <li>
               <a href='#' className='text-[#012970]'>
               <i></i>
