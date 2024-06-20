@@ -7,6 +7,8 @@ import { FaWpforms } from 'react-icons/fa';
 import { FaTable } from 'react-icons/fa';
 import { FaChartBar } from 'react-icons/fa';
 import { GiBoxingGloveSurprise } from 'react-icons/gi';
+import navList from "../data/navItem";
+import NavItem from '../sections/NavItem';
 
 function SideBar() {
     const [expandedIndex, setExpandedIndex] = useState(0);
@@ -16,15 +18,15 @@ function SideBar() {
   
 
   return (
-    <div id='sidebar' className='sidebar'>
+    <div id='sidebar' className='sidebar h-screen'>
         <ul id='sidebar-nav' className='sidebar-nav'>
             <li className='nav-item '>
-            <a href="" className=' text-gray-600 flex items-center gap-2'>
+            <a href="" className=' text-gray-600 flex items-center'>
             <i
             className="">
             <RxDashboard />
             </i>
-            <span>Dashboard</span>
+            <span className='nav-heading'>Dashboard</span>
             </a>
             </li>
 
@@ -38,7 +40,7 @@ function SideBar() {
             >
             <div className='flex items-center'>
               <i><IoDocumentTextOutline /> </i>
-              <span>Documents</span>
+              <span className='text-[#012970]'>Documents</span>
               </div>
               <i className=''>
               <FaChevronDown className={` ${expandedIndex === 'nav-content1' ? '' : 'rotate-180' }`} />
@@ -68,6 +70,8 @@ function SideBar() {
               <span>Logistics</span>
               </a>
               </li>
+
+              
               </ul>
             </li>
 
@@ -216,29 +220,33 @@ function SideBar() {
             id='forms-nav'
             className={`nav-content5 ${expandedIndex === 'nav-content5' ? 'block opacity-100 transition-all' :
               'hidden opacity-0' }`}>
-            <li>
-              <a href='#' className='text-[#012970]'>
+              <li >
+                <a href='#' className='text-[#012970]'>
+                 <i></i>
+                 <span>Bootstrap Icons</span>
+                </a>
+              </li>
+              <li>
+              <a href="#" className='text-[#012970]'>
               <i></i>
-              <span></span>
+              <span>Remix Icons</span>
               </a>
+              </li>
+
+              <li>
+              <a href="#" className='text-[#012970]'>
+              <i></i>
+              <span>Boxicons</span>
+              </a>
+              </li>
+              </ul>
             </li>
 
-            <li>
-            <a href='#' className='text-[#012970]'>
-            <i></i>
-            <span></span>
-            </a>
-          </li>
-
-          <li>
-          <a href='#' className='text-[#012970]'>
-          <i></i>
-          <span></span>
-          </a>
-        </li>
-            </ul>
-            </li>
-
+            <li className="nav-heading">Pages</li>
+            
+            {navList.map(nav => (
+                <NavItem key={nav._id} nav={nav} />
+               ))}
         </ul>
     </div>
   )

@@ -4,6 +4,10 @@ import SideBar from "./components/SideBar";
 
 //importing icons
 import 'remixicon/fonts/remixicon.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+//importing Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
