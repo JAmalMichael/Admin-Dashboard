@@ -1,6 +1,7 @@
 //importing components
 import Header from "./components/Header";
 import SideBar from "./components/SideBar";
+import Main from "./components/Main";
 
 //importing icons
 import 'remixicon/fonts/remixicon.css';
@@ -14,6 +15,7 @@ function App() {
     <div>
     <Header />
     <SideBar />
+    <Main />
     </div>
   )
 }
