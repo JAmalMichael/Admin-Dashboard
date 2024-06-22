@@ -5,7 +5,7 @@ import PageTitle from './PageTitle'
 function Main() {
   return (
     <main id='main' className='main absolute'>
-    <PageTitle />
+    <PageTitle page={'Dashboard'} />
     </main>
   )
 }
