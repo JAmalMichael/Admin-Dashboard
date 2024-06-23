@@ -4,6 +4,7 @@ import './Styles/card.css'
 
 function Cards({card}) {
 
+    //TO DO: EDIT THE CARD FILTER AND EDTI THE CARD LAYOUT
     const [filter, setFilter] =useState('Today');
 
     const handleFilterChange = filter => {
@@ -21,7 +22,7 @@ function Cards({card}) {
 
                 <div className='d-flex align-items-center'>
                     <div className='card-item rounded-circle d-flex align-items-center justify-content-center'>
-                        <i className={card.icon}></i>
+                        <i className={`${card.icon} text-[#4154f1]`}></i>
                     </div>
                     <div className='ps-3'>
                     <h6>

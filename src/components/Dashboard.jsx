@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './Styles/dashboard.css'
 import Cards from './Cards';
+import Report from './Report';
 
 function Dashboard() {
         const [cards, setCards] = useState({});
@@ -27,6 +28,9 @@ function Dashboard() {
                         cards && cards.length>0 &&
                         cards.map(card => <Cards key={card._id} card={card}/>)
                     }
+                    <div className='col-12'>
+                        <Report />
+                    </div>
                 </div>
             </div>
             <div className="col-lg-4"></div>
