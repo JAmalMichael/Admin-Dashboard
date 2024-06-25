@@ -3,6 +3,7 @@ import './Styles/dashboard.css'
 import Cards from './Cards';
 import Report from './Report';
 import RecentSales from './RecentSales';
+import TopSelling from './TopSelling';
 
 function Dashboard() {
         const [cards, setCards] = useState({});
@@ -34,6 +35,9 @@ function Dashboard() {
                     </div>
                     <div className='col-12'>
                     <RecentSales />
+                    </div>
+                    <div className='col-12'>
+                        <TopSelling />
                     </div>
                 </div>
             </div>
