@@ -33,11 +33,11 @@ function RecentActivity() {
         <CardFilter filterChange={handleFilterChange} />
 
         <div className='card-body'>
-            <h5>
+            <h5 className='card-title'>
                 Recent Activity <span>| {filter} </span>
             </h5>
 
-            <div className="ativity">
+            <div className="activity">
                 {items && 
                     items.length > 0 &&
                         items.map(item => (
