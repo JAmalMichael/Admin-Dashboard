@@ -9,7 +9,7 @@ function RecentActivity() {
     const [filter, setFilter] = useState('Today');
     const handleFilterChange = filter => {
         setFilter(filter);
-    }
+    };
 
     const fetchData = () => {
         try {
