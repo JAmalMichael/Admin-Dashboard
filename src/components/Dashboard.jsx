@@ -8,6 +8,7 @@ import RecentActivity from './RecentActivity';
 import BudgetReport from './BudgetReport';
 import WebTraffic from './WebTraffic';
 import News from './News';
+import Footer from './Footer';
 
 function Dashboard() {
         const [cards, setCards] = useState({});
@@ -52,6 +53,7 @@ function Dashboard() {
                     <News />
             </div>
      </div>
+     <Footer className=" sm:ml-0"/>
     </section>
 
   )
