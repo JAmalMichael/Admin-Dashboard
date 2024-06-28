@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../sections/logo'
+import Logo from '../sections/Logo'
 import SearchBar from './SearchBar'
 import Nav from './Nav'
 
