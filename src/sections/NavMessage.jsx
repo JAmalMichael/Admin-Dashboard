@@ -36,7 +36,7 @@ function NavMessage() {
 
         <li className='message-item '>
         <a href="#"
-        className='flex items-center justify-around px-2 gap-2 text-gray-600 max-sm:hidden'>
+        className='flex items-center justify-around px-2 gap-2 text-gray-600 '>
         <img 
           src="assets/items/messages-1.jpg"
           alt='message 1'
@@ -51,12 +51,12 @@ function NavMessage() {
         </li>
 
         <li>
-        <hr className='dropdown-divider max-sm:hidden'/>
+        <hr className='dropdown-divider '/>
         </li>
 
         <li className='message-item '>
         <a href="#"
-        className='flex items-center justify-around px-2 gap-2 text-gray-600 max-sm:hidden'>
+        className='flex items-center justify-around px-2 gap-2 text-gray-600 '>
         <img 
           src="assets/items/messages-2.jpg"
           alt='message 2'
@@ -71,12 +71,12 @@ function NavMessage() {
         </li>
 
         <li>
-        <hr className='dropdown-divider max-sm:hidden'/>
+        <hr className='dropdown-divider '/>
         </li>
 
         <li className='message-item '>
         <a href="#"
-        className='flex items-center justify-around px-2 gap-2 text-gray-600 max-sm:hidden'>
+        className='flex items-center justify-around px-2 gap-2 text-gray-600 '>
         <img 
           src="assets/items/messages-3.jpg"
           alt='message 3'
@@ -92,7 +92,7 @@ function NavMessage() {
 
 
         <li>
-        <hr className='dropdown-divider max-sm:hidden'/>
+        <hr className='dropdown-divider '/>
         </li>
 
                 <li className=''>

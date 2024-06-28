@@ -34,10 +34,10 @@ function NavNotice() {
     </a>
     </li>
     <li>
-        <hr className='dropdown-divider max-sm:hidden' />
+        <hr className='dropdown-divider ' />
     </li>
 
-        <li className='notification-item flex items-center justify-around px-2 max-sm:hidden'>
+        <li className='notification-item flex items-center justify-around px-2 '>
         <i>
             <BsExclamationCircle className='text-warning text-yellow-500 text-xl mr-2'/> </i>
             <div className='text-sm mx-2 my-2'>
@@ -48,10 +48,10 @@ function NavNotice() {
         </li>
 
         <li>
-        <hr className='dropdown-divider max-sm:hidden'/>
+        <hr className='dropdown-divider '/>
         </li>
 
-        <li className='notification-item flex items-center justify-around px-2 max-sm:hidden'>
+        <li className='notification-item flex items-center justify-around px-2 '>
         <i>
             <CiCircleRemove className='text-failed text-red-500 text-xl mr-2'/> </i>
             <div className='text-sm mx-2 my-2'>
@@ -62,10 +62,10 @@ function NavNotice() {
         </li>
 
         <li>
-        <hr className='dropdown-divider max-sm:hidden'/>
+        <hr className='dropdown-divider '/>
         </li>
 
-        <li className='notification-item flex items-center justify-around px-2 max-sm:hidden'>
+        <li className='notification-item flex items-center justify-around px-2 '>
         <i>
         <CiCircleCheck className='text-success text-green-500 text-xl mr-2'/> </i>
         <div className='text-sm mx-2 my-2'>
@@ -77,10 +77,10 @@ function NavNotice() {
 
 
         <li>
-        <hr className='dropdown-divider max-sm:hidden'/>
+        <hr className='dropdown-divider '/>
         </li>
 
-        <li className='notification-item flex items-center justify-around px-2 max-sm:hidden'>
+        <li className='notification-item flex items-center justify-around px-2 '>
         <i>
         <CiCircleInfo className='text-primary text-blue-500 text-xl mr-2'/> </i>
         <div className='text-sm mx-2 my-2'>

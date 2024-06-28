@@ -19,7 +19,7 @@ function SideBar() {
 
   return (
     <div id='sidebar' className='sidebar h-screen'>
-        <ul id='sidebar-nav' className='sidebar-nav'>
+        <ul id='sidebar-nav' className='sidebar-nav '>
             <li className='nav-item '>
             <a href="" className=' text-gray-600 flex items-center'>
             <i
