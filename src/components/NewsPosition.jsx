@@ -7,7 +7,7 @@ function NewsPosition({ item }) {
         <h4>
             <a href="#"> {item.title} </a>
         </h4>
-        <p>{item.subtitle}...</p>
+        <p className='text-sm'>{item.subtitle}...</p>
     </div>
   );
 }

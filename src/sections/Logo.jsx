@@ -7,9 +7,9 @@ function Logo() {
     }
 
   return (
-    <div className='flex items-center w-[250px] justify-between'>
+    <div className='flex items-center'>
         <a href='/' className='flex items-center leading-1'>
-        <span className='block text-lg text-[26px] font-bold text-[#012970] font-sans'>
+        <span className='block text-lg text-[26px] mr-10 font-bold text-[#012970] font-sans max-sm:hidden'>
         AdminDashboard</span>
         </a>    
           <FaList 

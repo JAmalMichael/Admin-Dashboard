@@ -17,13 +17,13 @@ function NavNotice() {
         setIsShow(!isShow);
      }}
      >
-      <FaRegBell className='text-[25px] ml-[230px]' />
+      <FaRegBell className='text-[25px] ml-[230px] max-sm:ml-0' />
       <span 
       className='z-999 rounded-full bg-blue-600 text-white text-[10px]
       p-1 absolute right-0 top-[-8px]'>4</span>
     </a>
     <ul className={`'dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications border-2 opacity-0'
-        ${isShow === false ? 'hidden' : 'block absolute bg-white transition-all opacity-100'}`}>
+        ${isShow === false ? 'hidden' : 'block absolute bg-white transition-all opacity-100 max-sm:right-[-100px]'}`}>
         
     <li className='dropdown-header text-sm py-1 px-1'>
     You have 4 new notifications
@@ -34,10 +34,10 @@ function NavNotice() {
     </a>
     </li>
     <li>
-        <hr className='dropdown-divider' />
+        <hr className='dropdown-divider max-sm:hidden' />
     </li>
 
-        <li className='notification-item flex items-center justify-around px-2'>
+        <li className='notification-item flex items-center justify-around px-2 max-sm:hidden'>
         <i>
             <BsExclamationCircle className='text-warning text-yellow-500 text-xl mr-2'/> </i>
             <div className='text-sm mx-2 my-2'>
@@ -48,10 +48,10 @@ function NavNotice() {
         </li>
 
         <li>
-        <hr className='dropdown-divider'/>
+        <hr className='dropdown-divider max-sm:hidden'/>
         </li>
 
-        <li className='notification-item flex items-center justify-around px-2'>
+        <li className='notification-item flex items-center justify-around px-2 max-sm:hidden'>
         <i>
             <CiCircleRemove className='text-failed text-red-500 text-xl mr-2'/> </i>
             <div className='text-sm mx-2 my-2'>
@@ -62,10 +62,10 @@ function NavNotice() {
         </li>
 
         <li>
-        <hr className='dropdown-divider'/>
+        <hr className='dropdown-divider max-sm:hidden'/>
         </li>
 
-        <li className='notification-item flex items-center justify-around px-2'>
+        <li className='notification-item flex items-center justify-around px-2 max-sm:hidden'>
         <i>
         <CiCircleCheck className='text-success text-green-500 text-xl mr-2'/> </i>
         <div className='text-sm mx-2 my-2'>
@@ -77,10 +77,10 @@ function NavNotice() {
 
 
         <li>
-        <hr className='dropdown-divider'/>
+        <hr className='dropdown-divider max-sm:hidden'/>
         </li>
 
-        <li className='notification-item flex items-center justify-around px-2'>
+        <li className='notification-item flex items-center justify-around px-2 max-sm:hidden'>
         <i>
         <CiCircleInfo className='text-primary text-blue-500 text-xl mr-2'/> </i>
         <div className='text-sm mx-2 my-2'>

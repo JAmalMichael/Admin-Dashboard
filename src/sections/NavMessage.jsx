@@ -19,7 +19,7 @@ function NavMessage() {
     </a>
     <ul 
     className={`'dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications border-2 opacity-0'
-        ${isShow === false ? 'hidden' : 'block absolute bg-white transition-all opacity-100 w-[250px] right-[.2rem]'}`}>
+        ${isShow === false ? 'hidden' : 'block absolute bg-white transition-all opacity-100 w-[250px] right-[.2rem] max-sm:right-[-100px]'}`}>
         
     <li className='dropdown-header text-sm py-1 px-1'>
     You have 3 new messages
@@ -36,7 +36,7 @@ function NavMessage() {
 
         <li className='message-item '>
         <a href="#"
-        className='flex items-center justify-around px-2 gap-2 text-gray-600'>
+        className='flex items-center justify-around px-2 gap-2 text-gray-600 max-sm:hidden'>
         <img 
           src="assets/items/messages-1.jpg"
           alt='message 1'
@@ -51,12 +51,12 @@ function NavMessage() {
         </li>
 
         <li>
-        <hr className='dropdown-divider'/>
+        <hr className='dropdown-divider max-sm:hidden'/>
         </li>
 
         <li className='message-item '>
         <a href="#"
-        className='flex items-center justify-around px-2 gap-2 text-gray-600'>
+        className='flex items-center justify-around px-2 gap-2 text-gray-600 max-sm:hidden'>
         <img 
           src="assets/items/messages-2.jpg"
           alt='message 2'
@@ -71,12 +71,12 @@ function NavMessage() {
         </li>
 
         <li>
-        <hr className='dropdown-divider'/>
+        <hr className='dropdown-divider max-sm:hidden'/>
         </li>
 
         <li className='message-item '>
         <a href="#"
-        className='flex items-center justify-around px-2 gap-2 text-gray-600'>
+        className='flex items-center justify-around px-2 gap-2 text-gray-600 max-sm:hidden'>
         <img 
           src="assets/items/messages-3.jpg"
           alt='message 3'
@@ -92,7 +92,7 @@ function NavMessage() {
 
 
         <li>
-        <hr className='dropdown-divider'/>
+        <hr className='dropdown-divider max-sm:hidden'/>
         </li>
 
                 <li className=''>
