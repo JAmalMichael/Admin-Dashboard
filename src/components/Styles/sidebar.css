@@ -18,7 +18,8 @@
 
 @media (max-width: 1199px){
     .sidebar {
-        left: -300px;
+        
+        opacity: 0;
     }
 }
 
@@ -41,7 +42,7 @@
 
 @media (min-width: 1199px) {
     .toogle-sidebar .sidebar {
-        left: 0;
+        opacity: 100;
     }
 }
 
@@ -49,10 +50,6 @@
     .toggle-sidebar #main,
     .toggle-sidebar {
         margin-left: 0;
-    }
-
-    .toogle-sidebar .sidebar {
-        left: -300px;
     }
 }
 

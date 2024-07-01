@@ -14,7 +14,7 @@ function Dashboard() {
         const [cards, setCards] = useState({});
 
         const fetchData = () => {
-            fetch('http://localhost:4000/cards')
+            fetch('https://jamalmichael.github.io/api/cards.json')
             .then(res => res.json())
             .then(data => {
                 setCards(data)

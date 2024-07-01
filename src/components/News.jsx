@@ -13,7 +13,7 @@ function News() {
 
     const fetchData = () => {
         try {
-            fetch('http://localhost:4000/news')
+            fetch('https://jamalmichael.github.io/api/news.json')
             .then(res => res.json())
             .then(data => {
                 setNews(data);

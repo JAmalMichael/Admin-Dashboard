@@ -14,7 +14,7 @@ function TopSelling() {
 
     const fetchData = () => {
         try {
-            fetch('http://localhost:4000/topselling')
+            fetch('https://jamalmichael.github.io/api/topselling.json')
             .then(res => res.json())
             .then(data => {
                 setItems(data)}

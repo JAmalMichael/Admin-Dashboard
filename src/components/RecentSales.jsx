@@ -14,7 +14,7 @@ function RecentSales() {
 
     const fetchData = () => {
         try {
-            fetch('http://localhost:4000/recentsales')
+            fetch('https://jamalmichael.github.io/api/recentsales.json')
             .then(res => res.json())
             .then(data => {
                 setItems(data);
